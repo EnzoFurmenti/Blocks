@@ -15,6 +15,8 @@ typedef void (^BlockWithParametre)(NSString*);
 typedef NSComparisonResult(^ComparisonResultBlock)(id _Nonnull obj1 , id _Nonnull obj2);
 @interface AppDelegate ()
 
+@property (nonatomic, strong) NSMutableArray *arrayAllStudents;
+
 @end
 
 @implementation AppDelegate
@@ -165,11 +167,24 @@ typedef NSComparisonResult(^ComparisonResultBlock)(id _Nonnull obj1 , id _Nonnul
         [student askPatient:goodGradeDoctor];
     };
     
+//    NSLog(@"!!!!!Использование блоков, как делегаты!!!!!");
+//    for (int i = 0; i < 20; i++) {
+//        Student *student = [[Student alloc] initWithRandomTheInitialValues];
+//        student.blockAsDelegate = blockAsDelegate;
+//        [student fellsBetter];
+//    }
+    
+    
+    
     NSLog(@"!!!!!Использование блоков, как делегаты!!!!!");
     for (int i = 0; i < 20; i++) {
         Student *student = [[Student alloc] initWithRandomTheInitialValues];
         student.blockAsDelegate = blockAsDelegate;
-        [student fellsBetter];
+        if(!self.arrayAllStudents)
+        {
+            self.arrayAllStudents = [[NSMutableArray alloc] init];
+        }
+        [self.arrayAllStudents addObject:student];
     }
     // Override point for customization after application launch.
     return YES;

@@ -76,6 +76,9 @@ static int lastNameCount = 21;
         self.stomachAche = arc4random() % 2;
         self.footAche = arc4random() % 2;
         self.goodGradeDoctor = arc4random() % 2;
+        SEL selFellsBetter = @selector(fellsBetter);
+        double randomInterval = 5 + arc4random() % 10;
+        [self performSelector:selFellsBetter withObject:nil afterDelay:randomInterval];
     }
     return self;
 }
@@ -124,6 +127,8 @@ static int lastNameCount = 21;
 }
 
 
+
+
 - (void) askPatient:(BOOL) goodGradeDoctor{
     if(goodGradeDoctor)
     {
@@ -134,10 +139,7 @@ static int lastNameCount = 21;
     
         NSLog(@"Пациента %@ %@ не устраивает использование AppDelegate",self.lastName,self.firstName);
     }
-    
-    
 }
-
 
 
 @end
