@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96D386011D58921E00E91209 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D386001D58921E00E91209 /* Student.m */; };
 		96D87D841D5451EF00E9B528 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D87D831D5451EF00E9B528 /* main.m */; };
 		96D87D871D5451EF00E9B528 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D87D861D5451EF00E9B528 /* AppDelegate.m */; };
 		96D87D8A1D5451EF00E9B528 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D87D891D5451EF00E9B528 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96D385FF1D58921E00E91209 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		96D386001D58921E00E91209 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		96D87D7F1D5451EF00E9B528 /* Blocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D87D831D5451EF00E9B528 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96D87D851D5451EF00E9B528 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +63,8 @@
 			children = (
 				96D87D851D5451EF00E9B528 /* AppDelegate.h */,
 				96D87D861D5451EF00E9B528 /* AppDelegate.m */,
+				96D385FF1D58921E00E91209 /* Student.h */,
+				96D386001D58921E00E91209 /* Student.m */,
 				96D87D881D5451EF00E9B528 /* ViewController.h */,
 				96D87D891D5451EF00E9B528 /* ViewController.m */,
 				96D87D8B1D5451EF00E9B528 /* Main.storyboard */,
@@ -153,6 +158,7 @@
 				96D87D8A1D5451EF00E9B528 /* ViewController.m in Sources */,
 				96D87D871D5451EF00E9B528 /* AppDelegate.m in Sources */,
 				96D87D841D5451EF00E9B528 /* main.m in Sources */,
+				96D386011D58921E00E91209 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +309,7 @@
 				96D87D981D5451EF00E9B528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
